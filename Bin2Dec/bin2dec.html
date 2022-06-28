@@ -2,16 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bin2dec.css"> 
   </head>
   <body>
     <script src="./bin2dec.js"></script>
     <h1>Convert Binary to Decimal</h1>
-    <form>
-      <label>Binary Value</label>
-      <input id="binary" type="text">
-      <input type="button" value="Convert" onclick="convertButton()">
-      <label>Decimal Value</label>
-      <p id="decimal"></p>
+    <form class="container">
+      <p>
+        <label class="flex-item">Binary Value</label>
+        <input id="binary" class="flex-item" type="text">
+      </p>
+      <p>
+        <input type="button" class="flex-item" id="convertBtn" value="Convert" onclick="convertButton()">
+      </p>
+      <p>
+        <label class="flex-item">Decimal Value</label>
+        <p id="decimal" class="flex-item"></p>
+      </p>
     </form>
   </body>
 </html>
